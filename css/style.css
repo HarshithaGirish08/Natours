@@ -39,7 +39,7 @@ body{
 }
 .text-box{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -52,10 +52,26 @@ body{
     font-size: 60px;
     letter-spacing: 35px;
     font-weight: 400;
+    animation-name: moveInleft;
+    animation-duration: 5s;
 }
 .heading-primary-sub{
     display: block;
     font-size: 20px;
     letter-spacing: 17.4px;
     font-weight: 700;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    80%{
+
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
